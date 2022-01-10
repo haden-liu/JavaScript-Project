@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Sans-serif";
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#container {
+  /* height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-top: 3rem;
+}
+
+#logo {
+  position: absolute;
+  top: 5%;
+}
+
+#logo img {
+  height: 200px;
+}
+
+#search {
+  /* position: absolute;
+  top: 30%;
+  height: 55px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e2e2e2;
+  border-radius: 40px;
+  overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 5px;
+  border: 1px solid #f4f4f4;
+  margin: 40px auto;
+  box-shadow: 0px 2px 4px #dfdfdf;
+}
+
+#search:hover {
+  box-shadow: 1px 1px 6px #00000010, -1px -1px 6px #00000010;
+}
+
+#search #searchText {
+  font-size: 1rem;
+  width: 85%;
+  border: none;
+  padding: 0.5rem;
+  outline-color: #1c1b1b;
+}
+
+#search i {
+  font-size: 25px;
+  height: 55px;
+  width: 55px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  color: #4285f4;
+  margin: 0 10px;
+  cursor: pointer;
+}
+#search__button {
+  padding: 0.75rem;
+  border: none;
+  outline-color: #1c1b1b;
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
+
+#searchResult {
+  /* height: auto;
+  width: 50%;
+  position: absolute;
+  top: 40%; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.results__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resultItem {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 275px;
+  margin: 1rem;
+  /* position: relative; */
+  width: 300px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.resultItem .resultTitle {
+  text-align: center;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.resultItem p {
+  margin: 0 20px;
+  padding-bottom: 20px;
+}
